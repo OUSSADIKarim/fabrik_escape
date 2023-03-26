@@ -581,6 +581,8 @@ footer {
 // destination page
 
 .destinations {
+  //this empty one is STRANGE because even if it's empty, whene I remove it
+  // the next selector #destination-main doesn't work !!!!!!!!?????????
 }
 
 #destinations-main {
