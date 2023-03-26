@@ -19,7 +19,7 @@ if (window.location.pathname === "/") {
   const cardsContainer = document.querySelector(".cards-container");
   let cardsData = [];
   const cardsDataFetcher = fetch(
-    "./public/assets/simulation-data/destinations.json"
+    "./public/assets/simulation-data/categories.json"
   )
     .then((response) => response.json())
     .then((data) => {
