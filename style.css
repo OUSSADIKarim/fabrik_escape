@@ -584,11 +584,12 @@ footer {
 }
 
 #destinations-main {
-  padding-block: 5rem;
+  padding-block: 8rem;
   color: var(--color-tertiary);
 }
 
 #destinations-main h1 {
+  margin-bottom: 2rem;
   color: var(--color-tertiary);
 }
 
@@ -597,4 +598,46 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
   gap: 2rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .destinations-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+#blog-main {
+  padding-block: 8rem;
+}
+
+#blog-main h1 {
+  margin-bottom: 2rem;
+  color: var(--color-tertiary);
+}
+
+.blog-card h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-secondary);
+  z-index: 2;
+  letter-spacing: 0.5rem;
+  font-family: var(--font-family-secondary);
+  font-weight: 400;
+  font-size: clamp(2rem, 2vw + 1rem, 3.5rem);
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 2rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

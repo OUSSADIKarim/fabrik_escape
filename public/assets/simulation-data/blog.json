@@ -1,0 +1,20 @@
+[
+  {
+    "img": "/public/assets/images/jonathan-forage-1azAjl8FTnU-unsplash.webp",
+    "title": "blog 1",
+    "author": "author 1",
+    "content": "content 1"
+  },
+  {
+    "img": "/public/assets/images/paul-pastourmatzis-nhFcSmJtAeo-unsplash.webp",
+    "title": "blog 2",
+    "author": "author 2",
+    "content": "content 2"
+  },
+  {
+    "img": "/public/assets/images/guide.webp",
+    "title": "blog 3",
+    "author": "author 3",
+    "content": "content 3"
+  }
+]

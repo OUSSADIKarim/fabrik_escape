@@ -89,3 +89,30 @@ if (window.location.pathname === "/public/destinations.html") {
     })
     .catch((err) => console.error(err));
 }
+
+if (window.location.pathname === "/public/blog.html") {
+  //blog logic
+
+  const blogContainer = document.querySelector(".blog-container");
+  let blogdata = [];
+
+  const blogDataFetcher = fetch("./assets/simulation-data/blog.json")
+    .then((response) => response.json())
+    .then((data) => {
+      blogdata = data;
+
+      if (blogdata !== []) {
+        blogdata.forEach((articleData) => {
+          const article = `
+          <div class="blog-card card"> 
+              <img class="card-img" src="${articleData.img}" alt="" />
+              <h3 class="card-title">${articleData.title}  <br /> <small>${articleData.author}</small></h3>
+            </div>
+          `;
+
+          blogContainer.innerHTML += article;
+        });
+      }
+    })
+    .catch((err) => console.log(err));
+}
